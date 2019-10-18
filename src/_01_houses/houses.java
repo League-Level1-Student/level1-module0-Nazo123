@@ -19,6 +19,16 @@ public class houses {
 		
 		house("large","pointy","red");
 		
+		house("small","flat","blue");
+		house("medium","pointy","green");
+		house("large","flat","blue");
+		house("large","pointy","red");
+		house("small","flat","blue");
+		house("large","pointy","red");
+		house("medium","pointy","green");
+		house("large","flat","blue");
+		
+		
 
 	
 	}
@@ -56,13 +66,13 @@ public class houses {
 			bob.turn(90);
 			bob.move(length);
 			bob.turn(-90);
-			
+			grass();
 	 }
 	 static public void grass(){
 		 
 		 bob.setPenColor(0, 255, 0);
 			bob.move(30);
-			bob.turn(-90);
+			bob.turn(270);
 						
 	 }
  static public void drawFlatRoof(){
