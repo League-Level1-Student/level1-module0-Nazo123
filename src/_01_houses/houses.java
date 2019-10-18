@@ -20,6 +20,7 @@ public class houses {
 		house("large","pointy","red");
 		
 		house("small","flat","blue");
+		house("large","pointy","red");
 		house("medium","pointy","green");
 		house("large","flat","blue");
 		house("large","pointy","red");
