@@ -55,20 +55,58 @@ int score = 0;
 		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
-		String guess = JOptionPane.showInputDialog("who is this?");
+		String guess = JOptionPane.showInputDialog("Who is this? First name only");
 
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
-
+if (guess.equalsIgnoreCase("Arnold")) {
+	score++;
+}
+else {
+	JOptionPane.showMessageDialog(null, "This is Arnold");
+}
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
 
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
+		String g = JOptionPane.showInputDialog("Who is this? First name only");
 
+		// 5. Check their answer. If they guessed correctly:
+		// -- Tell them they are right and increase the score by 1
+if (g.equalsIgnoreCase("Leonardo")) {
+	score++;
+}
+else {
+	JOptionPane.showMessageDialog(null, "This is Leonardo");
+}
 		// 8. .... repeat 4-7 for all your images.....
-
+showNextImage();
 		// 9. Show them their current score
+String ge = JOptionPane.showInputDialog("Who is this? First name only");
+
+// 5. Check their answer. If they guessed correctly:
+// -- Tell them they are right and increase the score by 1
+if (ge.equalsIgnoreCase("Morgan")) {
+score++;
+}
+else {
+JOptionPane.showMessageDialog(null, "This is Morgan");
+}
+// 8. .... repeat 4-7 for all your images.....
+showNextImage();
+String ga = JOptionPane.showInputDialog("Who is this? First name only");
+
+// 5. Check their answer. If they guessed correctly:
+// -- Tell them they are right and increase the score by 1
+if (ga.equalsIgnoreCase("Jack")) {
+score++;
+}
+else {
+JOptionPane.showMessageDialog(null, "This is Jack");
+}
+// 8. .... repeat 4-7 for all your images.....
+JOptionPane.showMessageDialog(null, "You got a "+score);
 
 	}
 
